@@ -419,6 +419,109 @@ async def get_learning_resources():
         ]
     }
 
+@app.get("/external-learning-sources")
+async def get_external_learning_sources():
+    """Get external learning sources for KCNA certification"""
+    try:
+        # Load external learning sources from JSON file
+        with open("backend/resources/learning_sources.json", "r", encoding="utf-8") as f:
+            learning_sources = json.load(f)
+        return learning_sources
+    except FileNotFoundError:
+        # Fallback to hardcoded data if file not found
+        return {
+            "learning_sources": [
+                {
+                    "id": "kube-academy",
+                    "title": "KubeAcademy",
+                    "url": "https://kube.academy",
+                    "provider": "VMware",
+                    "type": "learning_platform",
+                    "difficulty": "mixed",
+                    "category": "kubernetes",
+                    "description": "Free Kubernetes learning platform offering courses, tutorials, and hands-on labs for all skill levels.",
+                    "topics": [
+                        "Kubernetes Fundamentals",
+                        "Advanced Concepts",
+                        "Security",
+                        "Networking",
+                        "Storage",
+                        "Monitoring",
+                        "Troubleshooting",
+                        "Best Practices"
+                    ],
+                    "duration": "self-paced",
+                    "cost": "free",
+                    "rating": 4.7
+                },
+                {
+                    "id": "freecodecamp-kcna",
+                    "title": "KCNA Study Course on freeCodeCamp",
+                    "url": "https://www.freecodecamp.org/news/tag/kubernetes/",
+                    "provider": "freeCodeCamp",
+                    "type": "course",
+                    "difficulty": "beginner",
+                    "category": "kubernetes",
+                    "description": "Comprehensive study guide and practice materials for the Kubernetes and Cloud Native Associate (KCNA) certification exam.",
+                    "topics": [
+                        "Kubernetes Fundamentals",
+                        "Cloud Native Concepts",
+                        "Container Orchestration",
+                        "Microservices Architecture",
+                        "DevOps Practices",
+                        "Exam Preparation",
+                        "Practice Questions"
+                    ],
+                    "duration": "self-paced",
+                    "cost": "free",
+                    "rating": 4.8
+                }
+            ],
+            "categories": {
+                "kubernetes": {
+                    "name": "Kubernetes",
+                    "description": "Container orchestration and management"
+                }
+            },
+            "difficulty_levels": {
+                "beginner": {
+                    "name": "Beginner",
+                    "description": "No prior experience required"
+                },
+                "intermediate": {
+                    "name": "Intermediate",
+                    "description": "Some prior knowledge recommended"
+                }
+            }
+        }
+    except Exception as e:
+        raise HTTPException(
+            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+            detail=f"Error loading learning sources: {str(e)}"
+        )
+
+@app.get("/learning-sources-markdown")
+async def get_learning_sources_markdown():
+    """Get learning sources in Markdown format"""
+    try:
+        with open("backend/resources/learning_sources.md", "r", encoding="utf-8") as f:
+            markdown_content = f.read()
+        return {
+            "content": markdown_content,
+            "format": "markdown",
+            "last_updated": "2024-03-15"
+        }
+    except FileNotFoundError:
+        raise HTTPException(
+            status_code=status.HTTP_404_NOT_FOUND,
+            detail="Learning sources markdown file not found"
+        )
+    except Exception as e:
+        raise HTTPException(
+            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+            detail=f"Error loading markdown content: {str(e)}"
+        )
+
 if __name__ == "__main__":
     import uvicorn
     uvicorn.run(app, host="0.0.0.0", port=8000) 

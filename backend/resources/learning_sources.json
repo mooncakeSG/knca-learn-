@@ -1,0 +1,260 @@
+{
+  "learning_sources": [
+    {
+      "id": "lfs250",
+      "title": "Kubernetes and Cloud Native Essentials (LFS250)",
+      "url": "https://training.linuxfoundation.org/training/kubernetes-and-cloud-native-essentials-lfs250/",
+      "provider": "Linux Foundation",
+      "type": "course",
+      "difficulty": "intermediate",
+      "category": "kubernetes",
+      "subcategory": "cloud-native",
+      "description": "Comprehensive course covering Kubernetes fundamentals and cloud-native application development. Includes hands-on labs and real-world scenarios.",
+      "topics": [
+        "Kubernetes Architecture",
+        "Pod Management",
+        "Services and Networking",
+        "Storage and Volumes",
+        "Security and RBAC",
+        "Monitoring and Logging",
+        "Helm Charts",
+        "Cloud Native Applications"
+      ],
+      "duration": "40 hours",
+      "certification": "Linux Foundation Certified Kubernetes Administrator (CKA)",
+      "cost": "paid",
+      "language": "English",
+      "last_updated": "2024-01-15",
+      "rating": 4.8,
+      "reviews_count": 1250
+    },
+    {
+      "id": "edx-cloud-infra",
+      "title": "Introduction to Cloud Infrastructure Technologies",
+      "url": "https://www.edx.org/course/introduction-to-cloud-infrastructure-technologies",
+      "provider": "edX",
+      "type": "course",
+      "difficulty": "beginner",
+      "category": "cloud-computing",
+      "subcategory": "infrastructure",
+      "description": "Learn the fundamentals of cloud infrastructure, virtualization, and containerization technologies that form the foundation of modern cloud-native applications.",
+      "topics": [
+        "Cloud Computing Fundamentals",
+        "Virtualization",
+        "Containerization",
+        "Microservices Architecture",
+        "DevOps Practices",
+        "Infrastructure as Code",
+        "Cloud Security"
+      ],
+      "duration": "8 weeks",
+      "certification": "edX Certificate",
+      "cost": "free",
+      "language": "English",
+      "last_updated": "2024-02-01",
+      "rating": 4.5,
+      "reviews_count": 890
+    },
+    {
+      "id": "edx-kubernetes-intro",
+      "title": "Introduction to Kubernetes",
+      "url": "https://www.edx.org/course/introduction-to-kubernetes",
+      "provider": "edX",
+      "type": "course",
+      "difficulty": "beginner",
+      "category": "kubernetes",
+      "subcategory": "fundamentals",
+      "description": "A beginner-friendly introduction to Kubernetes, covering basic concepts, deployment, and management of containerized applications.",
+      "topics": [
+        "Kubernetes Basics",
+        "Pods and Containers",
+        "Deployments",
+        "Services",
+        "ConfigMaps and Secrets",
+        "Basic Troubleshooting"
+      ],
+      "duration": "6 weeks",
+      "certification": "edX Certificate",
+      "cost": "free",
+      "language": "English",
+      "last_updated": "2024-01-20",
+      "rating": 4.6,
+      "reviews_count": 1100
+    },
+    {
+      "id": "edx-k3s-edge",
+      "title": "Introduction to Kubernetes on Edge with K3s",
+      "url": "https://www.edx.org/course/introduction-to-kubernetes-on-edge-with-k3s",
+      "provider": "edX",
+      "type": "course",
+      "difficulty": "intermediate",
+      "category": "kubernetes",
+      "subcategory": "edge-computing",
+      "description": "Learn how to deploy and manage Kubernetes clusters on edge devices using K3s, a lightweight Kubernetes distribution.",
+      "topics": [
+        "Edge Computing",
+        "K3s Architecture",
+        "Lightweight Kubernetes",
+        "Edge Device Management",
+        "IoT Integration",
+        "Resource Optimization"
+      ],
+      "duration": "4 weeks",
+      "certification": "edX Certificate",
+      "cost": "free",
+      "language": "English",
+      "last_updated": "2024-01-10",
+      "rating": 4.4,
+      "reviews_count": 650
+    },
+    {
+      "id": "kube-academy",
+      "title": "KubeAcademy",
+      "url": "https://kube.academy",
+      "provider": "VMware",
+      "type": "learning_platform",
+      "difficulty": "mixed",
+      "category": "kubernetes",
+      "subcategory": "comprehensive",
+      "description": "Free Kubernetes learning platform offering courses, tutorials, and hands-on labs for all skill levels. Covers from basics to advanced topics.",
+      "topics": [
+        "Kubernetes Fundamentals",
+        "Advanced Concepts",
+        "Security",
+        "Networking",
+        "Storage",
+        "Monitoring",
+        "Troubleshooting",
+        "Best Practices"
+      ],
+      "duration": "self-paced",
+      "certification": "VMware Certificate",
+      "cost": "free",
+      "language": "English",
+      "last_updated": "2024-03-01",
+      "rating": 4.7,
+      "reviews_count": 2100
+    },
+    {
+      "id": "edx-linux-intro",
+      "title": "Introduction to Linux",
+      "url": "https://www.edx.org/course/introduction-to-linux",
+      "provider": "edX",
+      "type": "course",
+      "difficulty": "beginner",
+      "category": "linux",
+      "subcategory": "fundamentals",
+      "description": "Essential Linux knowledge for working with Kubernetes and cloud-native technologies. Covers command line, file systems, and basic administration.",
+      "topics": [
+        "Linux Command Line",
+        "File System Navigation",
+        "User Management",
+        "Process Management",
+        "Network Configuration",
+        "Shell Scripting Basics",
+        "Package Management"
+      ],
+      "duration": "8 weeks",
+      "certification": "edX Certificate",
+      "cost": "free",
+      "language": "English",
+      "last_updated": "2024-01-15",
+      "rating": 4.6,
+      "reviews_count": 1500
+    },
+    {
+      "id": "civo-academy",
+      "title": "Civo Academy",
+      "url": "https://civo.com/academy",
+      "provider": "Civo",
+      "type": "learning_platform",
+      "difficulty": "mixed",
+      "category": "kubernetes",
+      "subcategory": "cloud-native",
+      "description": "Comprehensive learning platform focused on Kubernetes and cloud-native technologies. Offers practical tutorials and real-world scenarios.",
+      "topics": [
+        "Kubernetes Deployment",
+        "Cloud-Native Applications",
+        "Microservices",
+        "CI/CD Pipelines",
+        "Monitoring and Observability",
+        "Security Best Practices",
+        "Performance Optimization"
+      ],
+      "duration": "self-paced",
+      "certification": "Civo Certificate",
+      "cost": "free",
+      "language": "English",
+      "last_updated": "2024-02-15",
+      "rating": 4.5,
+      "reviews_count": 950
+    },
+    {
+      "id": "freecodecamp-kcna",
+      "title": "KCNA Study Course on freeCodeCamp",
+      "url": "https://www.freecodecamp.org/news/tag/kubernetes/",
+      "provider": "freeCodeCamp",
+      "type": "course",
+      "difficulty": "beginner",
+      "category": "kubernetes",
+      "subcategory": "certification-prep",
+      "description": "Comprehensive study guide and practice materials for the Kubernetes and Cloud Native Associate (KCNA) certification exam.",
+      "topics": [
+        "Kubernetes Fundamentals",
+        "Cloud Native Concepts",
+        "Container Orchestration",
+        "Microservices Architecture",
+        "DevOps Practices",
+        "Exam Preparation",
+        "Practice Questions"
+      ],
+      "duration": "self-paced",
+      "certification": "KCNA Certification Prep",
+      "cost": "free",
+      "language": "English",
+      "last_updated": "2024-01-30",
+      "rating": 4.8,
+      "reviews_count": 1800
+    }
+  ],
+  "categories": {
+    "kubernetes": {
+      "name": "Kubernetes",
+      "description": "Container orchestration and management",
+      "subcategories": ["fundamentals", "advanced", "cloud-native", "edge-computing", "certification-prep"]
+    },
+    "cloud-computing": {
+      "name": "Cloud Computing",
+      "description": "Cloud infrastructure and services",
+      "subcategories": ["infrastructure", "platforms", "services"]
+    },
+    "linux": {
+      "name": "Linux",
+      "description": "Linux operating system fundamentals",
+      "subcategories": ["fundamentals", "administration", "scripting"]
+    }
+  },
+  "difficulty_levels": {
+    "beginner": {
+      "name": "Beginner",
+      "description": "No prior experience required",
+      "estimated_time": "2-4 weeks"
+    },
+    "intermediate": {
+      "name": "Intermediate",
+      "description": "Some prior knowledge recommended",
+      "estimated_time": "4-8 weeks"
+    },
+    "advanced": {
+      "name": "Advanced",
+      "description": "Significant experience required",
+      "estimated_time": "8-12 weeks"
+    }
+  },
+  "metadata": {
+    "total_sources": 8,
+    "last_updated": "2024-03-15",
+    "version": "1.0.0",
+    "description": "Comprehensive collection of external learning resources for KCNA certification and Kubernetes learning"
+  }
+} 
